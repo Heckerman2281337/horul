@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\pages\\dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\pages\\dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\pages\\rules.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\pages\\contacts.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\pages\\contacts.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -67,7 +67,7 @@
               "RelativeDocumentMoniker": "horul\\src\\pages\\Rules.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Rules.jsx",
               "RelativeToolTip": "horul\\src\\pages\\Rules.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T16:08:15.069Z",
               "EditorCaption": ""
@@ -82,18 +82,17 @@
               "RelativeToolTip": "horul\\package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-30T15:57:53.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T15:57:53.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dashboard.jsx",
-              "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\pages\\Dashboard.jsx",
-              "RelativeDocumentMoniker": "horul\\src\\pages\\Dashboard.jsx",
-              "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Dashboard.jsx",
-              "RelativeToolTip": "horul\\src\\pages\\Dashboard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Contacts.jsx",
+              "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\pages\\Contacts.jsx",
+              "RelativeDocumentMoniker": "horul\\src\\pages\\Contacts.jsx",
+              "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Contacts.jsx",
+              "RelativeToolTip": "horul\\src\\pages\\Contacts.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T15:50:31.95Z",
               "EditorCaption": ""
@@ -106,7 +105,7 @@
               "RelativeDocumentMoniker": "horul\\src\\pages\\Home.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Home.jsx",
               "RelativeToolTip": "horul\\src\\pages\\Home.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T15:50:11.347Z",
               "EditorCaption": ""
@@ -119,20 +118,20 @@
               "RelativeDocumentMoniker": "horul\\src\\components\\Header.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\components\\Header.jsx",
               "RelativeToolTip": "horul\\src\\components\\Header.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T15:44:00.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "App.jsx",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\App.jsx",
               "RelativeDocumentMoniker": "horul\\src\\App.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\App.jsx",
               "RelativeToolTip": "horul\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T08:12:36.987Z",
               "EditorCaption": ""
@@ -145,7 +144,7 @@
               "RelativeDocumentMoniker": "horul\\src\\main.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\main.jsx",
               "RelativeToolTip": "horul\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T07:50:16.104Z",
               "EditorCaption": ""
@@ -182,8 +181,7 @@
               "RelativeToolTip": "horul\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-30T05:30:00.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T05:30:00.077Z"
             },
             {
               "$type": "Document",
@@ -195,8 +193,7 @@
               "RelativeToolTip": "horul\\eslint.config.js",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-30T05:29:57.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T05:29:57.204Z"
             },
             {
               "$type": "Document",
@@ -208,8 +205,7 @@
               "RelativeToolTip": "horul\\vite.config.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-30T05:29:39.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T05:29:39.336Z"
             }
           ]
         }

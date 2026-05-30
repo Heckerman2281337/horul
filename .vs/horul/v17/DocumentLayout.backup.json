@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "F:\\Projects\\horul\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -31,12 +15,32 @@
       "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\pages\\rules.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\pages\\rules.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\horul\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|solutionrelative:horul\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D26B291D-97DC-1F8D-3548-C4BCBA8E78D3}|horul.esproj|f:\\projects\\horul\\changelog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -53,11 +57,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Rules.jsx",
+              "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\pages\\Rules.jsx",
+              "RelativeDocumentMoniker": "horul\\src\\pages\\Rules.jsx",
+              "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Rules.jsx",
+              "RelativeToolTip": "horul\\src\\pages\\Rules.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-05-30T16:08:15.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "package.json",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\package.json",
               "RelativeDocumentMoniker": "horul\\package.json",
@@ -70,72 +87,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Dashboard.jsx",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\pages\\Dashboard.jsx",
               "RelativeDocumentMoniker": "horul\\src\\pages\\Dashboard.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Dashboard.jsx",
               "RelativeToolTip": "horul\\src\\pages\\Dashboard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T15:50:31.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Home.jsx",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\pages\\Home.jsx",
               "RelativeDocumentMoniker": "horul\\src\\pages\\Home.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\pages\\Home.jsx",
               "RelativeToolTip": "horul\\src\\pages\\Home.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T15:50:11.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Header.jsx",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\components\\Header.jsx",
               "RelativeDocumentMoniker": "horul\\src\\components\\Header.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\components\\Header.jsx",
               "RelativeToolTip": "horul\\src\\components\\Header.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T15:44:00.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "App.jsx",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\App.jsx",
               "RelativeDocumentMoniker": "horul\\src\\App.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\App.jsx",
               "RelativeToolTip": "horul\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T08:12:36.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "main.jsx",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\src\\main.jsx",
               "RelativeDocumentMoniker": "horul\\src\\main.jsx",
               "ToolTip": "F:\\Projects\\horul\\horul\\src\\main.jsx",
               "RelativeToolTip": "horul\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-05-30T07:50:16.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Sdk.targets",
               "DocumentMoniker": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.visualstudio.javascript.sdk\\1.0.2191419\\Sdk\\Sdk.targets",
               "ToolTip": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.visualstudio.javascript.sdk\\1.0.2191419\\Sdk\\Sdk.targets",
@@ -145,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CHANGELOG.md",
               "DocumentMoniker": "F:\\Projects\\horul\\CHANGELOG.md",
               "RelativeDocumentMoniker": "CHANGELOG.md",
@@ -157,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "index.html",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\index.html",
               "RelativeDocumentMoniker": "horul\\index.html",
@@ -170,20 +187,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "eslint.config.js",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\eslint.config.js",
               "RelativeDocumentMoniker": "horul\\eslint.config.js",
               "ToolTip": "F:\\Projects\\horul\\horul\\eslint.config.js",
               "RelativeToolTip": "horul\\eslint.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-30T05:29:57.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "vite.config.js",
               "DocumentMoniker": "F:\\Projects\\horul\\horul\\vite.config.js",
               "RelativeDocumentMoniker": "horul\\vite.config.js",
