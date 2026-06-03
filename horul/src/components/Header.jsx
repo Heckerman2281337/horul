@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from '../assets/favicon.png'
 
 export default function Header() {
     return (
@@ -7,9 +8,9 @@ export default function Header() {
             <Container>
                 <Navbar.Brand as={Link} to="/" className="d-flex align-items-center gap-2">
                     <Image
-                        src='../assets/favicon.svg'
-                        width="30"
-                        height="30"
+                        src={ logo }
+                        width="50"
+                        height="50"
                         className="d-inline-block align-top"
                         alt="Хорул Лого"
                     />

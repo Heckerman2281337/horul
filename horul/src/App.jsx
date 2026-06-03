@@ -6,6 +6,7 @@ import Conctacts from './pages/Contacts.jsx';
 import Faq from './pages/Faq.jsx';
 import ProjectDevelopment from './pages/ProjectDevelopment.jsx';
 import Purchase from './pages/Purchase.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/faq" element={<Faq />} />
                 <Route path="*" element={<h2 className="text-center mt-5">Страница не найдена</h2>} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
