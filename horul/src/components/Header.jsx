@@ -24,7 +24,6 @@ export default function Header() {
                         <Nav.Link as={Link} to="/rules">Правила</Nav.Link>
                         <Nav.Link as={Link} to="/projectDevelopment">Развитие проекта</Nav.Link>
                         <Nav.Link as={Link} to="/purchase">Приобретение игры</Nav.Link>
-                        <Nav.Link as={Link} to="/contacts">Контакты</Nav.Link>
                         <Nav.Link as={Link} to="/faq">FAQ</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
