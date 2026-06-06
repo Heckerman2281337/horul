@@ -7,7 +7,7 @@ export default function Faq() {
 
             <h1 className="display-5 fw-bold mb-5">Часто задаваемые вопросы</h1>
 
-            <Accordion defaultActiveKey="1">
+            <Accordion>
                 <Accordion.Item eventKey="1">
                     <Accordion.Header><FaQuestion size={20} className="text-primary me-3"/> Вопрос 1</Accordion.Header>
                     <Accordion.Body>

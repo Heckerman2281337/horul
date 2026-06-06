@@ -16,11 +16,13 @@ export default function Purchase() {
                     <Card className="bg-dark text-white-50 border-secondary">
                         <Card.Body>
                             <FaBox size={32} className="mb-3 text-white" />
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Фишки игроков</ListGroup.Item>
-                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Правила игры</ListGroup.Item>
-                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Мешочек</ListGroup.Item>
-                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Шпаргалки</ListGroup.Item>
+                            <ListGroup variant="flush" className="gap-2">
+                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Сильные символы (6 буддийских знаков × 4) | 24 шт. </ListGroup.Item>
+                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Обычные символы (12 животных × 4) | 48 шт. </ListGroup.Item>
+                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Буклет с правилами | 1 шт. </ListGroup.Item>
+                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Тканевый мешочек для фишек | 1 шт. </ListGroup.Item>
+                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Шпаргалка иерархии | 1 шт. </ListGroup.Item>
+                                <ListGroup.Item className="bg-dark text-white-50 border-secondary"> Картонная коробка | 1 шт.  </ListGroup.Item>
                             </ListGroup>
                         </Card.Body>
                     </Card>

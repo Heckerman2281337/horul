@@ -18,7 +18,7 @@ export default function Home() {
             <div className="d-flex flex-column align-items-center gap-3 mt-5">
                 <div className="d-flex gap-3">
                 <Badge bg="success" className="fs-6 px-3 py-2">
-                    <FaUsers className="me-2" />Количество игроков: 2–6
+                    <FaUsers className="me-2" />Количество игроков: 2–8
                 </Badge>
                 <Badge bg="success" className="fs-6 px-3 py-2">
                     <FaClock className="me-2" /> Время партии: 30–60 минут
