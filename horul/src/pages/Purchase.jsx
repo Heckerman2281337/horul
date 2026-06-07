@@ -3,8 +3,8 @@ import { FaBox, FaShoppingCart, FaShoppingBag } from 'react-icons/fa';
 
 export default function Purchase() {
     return (
-        <Container className="text-center py-5 mt-5 mb-5">
-            <h1 className="display-5 fw-bold mb-5">Приобретение игры</h1>
+        <Container className="text-center py-5 mt-2 mb-5">
+            <h1 className="display-5 fw-bold mb-5" style={{ letterSpacing: '0.07em' }}>Приобретение игры</h1>
 
             <p className="lead text-muted mx-auto mb-5" style={{ maxWidth: '500px' }}>
                 Вы можете приобрести игру на следующих платформах или напрямую через краудфандинг

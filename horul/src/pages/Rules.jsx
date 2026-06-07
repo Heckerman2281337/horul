@@ -1,12 +1,28 @@
-import { Container, Table, Badge, Card, Accordion } from 'react-bootstrap';
+import { Container, Table, Badge, Card, Accordion, Col, Row } from 'react-bootstrap';
 import { FaCheck, FaTimes } from 'react-icons/fa';
+
+function SectionTitle({ title })
+{
+    return (
+        <Row className="align-items-center my-5">
+            <Col><hr className="border-2 border-secondary opacity-100" /></Col>
+            <Col xs="auto">
+                <div className="d-flex align-items-center gap-2 px-4 py-1 rounded-pill bg-dark text-white shadow">
+                    <span className="fw-bold fs-5 text-uppercase letter-spacing-1" style={{ letterSpacing: '0.2em' }}>{title}</span>
+                </div>
+            </Col>
+            <Col><hr className="border-2 border-secondary opacity-100" /></Col>
+        </Row>
+    );
+}
 
 export default function Rules() {
     return (
-        <Container className="py-5 mt-5 mb-5" style={{ maxWidth: '860px' }}>
-            <h1 className="display-4 fw-bold text-center mb-2">Правила игры «Хорул»</h1>
+        <Container className="py-5 mt-2 mb-5" style={{ maxWidth: '900px' }}>
+            <h1 className="display-5 fw-bold text-center mb-5" style={{ letterSpacing: '0.07em' }}>Правила игры</h1>
 
-            <h5 className="fw-bold mt-4">Подготовка к игре</h5>
+            <SectionTitle title="Подготовка к игре"/>
+
             <h5 className="fw-bold mt-4">Шаг 1. Перемешивание</h5>
             <p>Все 72 фишки тщательно перемешиваются рубашкой (орнаментом) вверх.</p>
 
@@ -63,7 +79,7 @@ export default function Rules() {
                 определённый жребием (или победитель предыдущей партии).
             </p>
 
-            <h5 className="fw-bold mt-5"> Иерархия животных</h5>
+            <SectionTitle title="Иерархия животных" />
             <p>Порядок соответствует легенде о Великой гонке к Нефритовому императору (от сильного к слабому):</p>
             <div className="d-flex flex-wrap gap-2 mb-4">
                 {['🐀 Мышь', '🐂 Корова', '🐅 Тигр', '🐇 Заяц', '🐉 Дракон', '🐍 Змея',
@@ -74,7 +90,7 @@ export default function Rules() {
                     ))}
             </div>
 
-            <h5 className="fw-bold mt-5"> Сильные символы (козыри)</h5>
+            <SectionTitle title="Сильные символы (козыри)" />
             <p className="text-muted">Любой сильный символ сильнее любого животного.</p>
             <Table bordered hover responsive className="text-center">
                 <thead className="table-dark">
@@ -90,11 +106,11 @@ export default function Rules() {
                 </tbody>
             </Table>
 
-            <h5 className="fw-bold mt-4">Процесс игры</h5>
+            <SectionTitle title="Процесс игры" />
             <p>Игроки ходят <strong>по часовой стрелке</strong>.</p>
 
             <Card className="mb-3">
-                <Card.Header className="bg-info text-white fw-bold">Шаг 1. Заход</Card.Header>
+                <Card.Header className="text-white fw-bold" style={{ background:"#3D251E"}}>Шаг 1. Заход</Card.Header>
                 <Card.Body>
                     <p>Игрок выкладывает в центр стола <strong>от 1 до 4 фишек одинакового достоинства</strong>.</p>
                     <Table bordered size="sm">
@@ -116,7 +132,7 @@ export default function Rules() {
             </Card>
 
             <Card className="mb-3">
-                <Card.Header className="bg-info text-white fw-bold">Шаг 2. Покрытие</Card.Header>
+                <Card.Header className="text-white fw-bold" style={{ background: "#3D251E" }}>Шаг 2. Покрытие</Card.Header>
                 <Card.Body>
                     <p>Следующий игрок <strong>обязан</strong> выложить <strong>такое же количество фишек</strong>, что и предыдущий. Это можно сделать двумя способами:</p>
                     <p><strong>А) Побить</strong> — выложить фишки, каждая из которых <strong>сильнее</strong> соответствующей фишки соперника.</p>
@@ -132,7 +148,7 @@ export default function Rules() {
             </Card>
 
             <Card className="mb-3">
-                <Card.Header className="bg-info text-white fw-bold">Шаг 3. Определение победителя взятки</Card.Header>
+                <Card.Header className="text-white fw-bold" style={{ background: "#3D251E" }}>Шаг 3. Определение победителя взятки</Card.Header>
                 <Card.Body>
                     <p>Когда все игроки сделали ход:</p>
                     <ol>
@@ -144,7 +160,7 @@ export default function Rules() {
             </Card>
 
             <Card className="mb-4">
-                <Card.Header className="bg-info text-white fw-bold">Шаг 4. Новый ход</Card.Header>
+                <Card.Header className="text-white fw-bold" style={{ background: "#3D251E" }}>Шаг 4. Новый ход</Card.Header>
                 <Card.Body>
                     <p className="mb-0">Право следующего хода переходит к игроку, выигравшему взятку. Игра продолжается, пока у всех игроков не закончатся фишки.</p>
                 </Card.Body>
@@ -164,34 +180,49 @@ export default function Rules() {
                 </tbody>
             </Table>
 
-            <h5 className="fw-bold mt-4">Завершение игры</h5>
+
+            <SectionTitle title="Завершение игры" />
             <ol>
                 <li>Когда все фишки закончились, каждый игрок подсчитывает количество выигранных взяток.</li>
                 <li><strong>Побеждает игрок (или команда), набравший наибольшее количество взяток.</strong></li>
                 <li>При равном количестве взяток объявляется ничья.</li>
             </ol>
 
-            <h1>Шпаргалка</h1>
-            {/*Сделать аккордион*/}
-            <Card className="bg-dark text-white border-secondary">
-                <Card.Body className="font-monospace" style={{ whiteSpace: 'pre-line', lineHeight: '1.8' }}>
-                    <strong>ПОДГОТОВКА:</strong>{'\n'}
-                    • Перемешайте 72 фишки.{'\n'}
-                    • Раздайте поровну (или стопками по 6–8 фишек).{'\n\n'}
-                    <strong>ИЕРАРХИЯ:</strong>{'\n'}
-                    • Козыри: Хурту {'>'} Шындавал {'>'} Балык {'>'} Тун {'>'} Олчей удазыны {'>'} Хаан-Херети{'\n'}
-                    • Животные: Мышь {'>'} Корова {'>'} Тигр {'>'} Заяц {'>'} Дракон {'>'} Змея {'>'} Лошадь {'>'} Овца {'>'} Обезьяна {'>'} Петух {'>'} Собака {'>'} Свинья{'\n'}
-                    • Любой козырь сильнее любого животного.{'\n\n'}
-                    <strong>ХОД ИГРЫ:</strong>{'\n'}
-                    1. ЗАХОД: выложи 1–4 одинаковые фишки.{'\n'}
-                    2. ПОКРОЙ: выложи СТОЛЬКО ЖЕ фишек (обязательно!){'\n'}
-                    {'   '}• Хочешь выиграть? Бей более сильными!{'\n'}
-                    {'   '}• Нет сильных? Покрой любыми!{'\n'}
-                    3. ВЗЯТКА: забирает тот, у кого самая сильная фишка.{'\n'}
-                    4. НОВЫЙ ХОД: начинает победитель взятки.{'\n\n'}
-                    <strong className="text-success">ЦЕЛЬ: набрать больше всех взяток</strong>
-                </Card.Body>
-            </Card>
+            <Accordion flush>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                        <div className="w-100 d-flex justify-content-center">
+                            <span
+                            className="fw-bold fs-5 text-uppercase px-4 py-1 rounded-pill text-white shadow"
+                            style={{ letterSpacing: '0.2em', background: 'linear-gradient(180deg, #964B00, #000000)', }}
+                            >
+                            Шпаргалка
+                            </span>
+                        </div>
+                    </Accordion.Header>
+                        <Accordion.Body>
+                            <Card className="bg-dark text-white border-secondary">
+                                <Card.Body className="font-monospace" style={{ whiteSpace: 'pre-line', lineHeight: '1.8' }}>
+                                    <strong>ПОДГОТОВКА:</strong>{'\n'}
+                                    • Перемешайте 72 фишки.{'\n'}
+                                    • Раздайте поровну (или стопками по 6–8 фишек).{'\n\n'}
+                                    <strong>ИЕРАРХИЯ:</strong>{'\n'}
+                                    • Козыри: Хурту {'>'} Шындавал {'>'} Балык {'>'} Тун {'>'} Олчей удазыны {'>'} Хаан-Херети{'\n'}
+                                    • Животные: Мышь {'>'} Корова {'>'} Тигр {'>'} Заяц {'>'} Дракон {'>'} Змея {'>'} Лошадь {'>'} Овца {'>'} Обезьяна {'>'} Петух {'>'} Собака {'>'} Свинья{'\n'}
+                                    • Любой козырь сильнее любого животного.{'\n\n'}
+                                    <strong>ХОД ИГРЫ:</strong>{'\n'}
+                                    1. ЗАХОД: выложи 1–4 одинаковые фишки.{'\n'}
+                                    2. ПОКРОЙ: выложи СТОЛЬКО ЖЕ фишек (обязательно!){'\n'}
+                                    {'   '}• Хочешь выиграть? Бей более сильными!{'\n'}
+                                    {'   '}• Нет сильных? Покрой любыми!{'\n'}
+                                    3. ВЗЯТКА: забирает тот, у кого самая сильная фишка.{'\n'}
+                                    4. НОВЫЙ ХОД: начинает победитель взятки.{'\n\n'}
+                                    <strong className="text-success">ЦЕЛЬ: набрать больше всех взяток</strong>
+                                </Card.Body>
+                            </Card>
+                        </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
         </Container>
     );
 }

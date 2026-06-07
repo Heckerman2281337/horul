@@ -3,9 +3,9 @@ import { FaClock, FaUser, FaUsers } from 'react-icons/fa';
 
 export default function Home() {
     return (
-        <Container className="text-center py-5 mt-5 mb-5">
+        <Container className="text-center py-5 mt-2 mb-5">
 
-            <h1 className="display-3 fw-bold">Хорул</h1>
+            <h1 className="display-3 mb-5 fw-bold" style={{ letterSpacing: '0.07em' }}>Хорул</h1>
 
             <p className="lead text-muted mx-auto mb-4 fs-3" style={{ maxWidth: '600px' }}>
                 «Хорул» — древняя тувинская настольная игра. В её основе лежат 12-летний цикл восточного календаря (12 животных) и шесть буддийских символов удачи.

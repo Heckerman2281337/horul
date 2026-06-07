@@ -3,9 +3,9 @@ import { FaQuestion } from 'react-icons/fa';
 
 export default function Faq() {
     return (
-        <Container className="text-center py-5 mt-5 mb-5" style={{ maxWidth: '700px' }}>
+        <Container className="text-center py-5 mt-2 mb-5" style={{ maxWidth: '700px' }}>
 
-            <h1 className="display-5 fw-bold mb-5">Часто задаваемые вопросы</h1>
+            <h1 className="display-5 fw-bold mb-5" style={{ letterSpacing: '0.07em' }}>Часто задаваемые вопросы</h1>
 
             <Accordion>
                 <Accordion.Item eventKey="1">
