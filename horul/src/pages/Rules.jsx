@@ -9,7 +9,7 @@ function SectionTitle({ title })
             <Col><hr className="border-2 border-secondary opacity-100" /></Col>
             <Col xs="auto">
                 <div className="d-flex align-items-center gap-2 px-4 py-1 rounded-pill bg-dark text-white shadow">
-                    <span className="fw-bold fs-5 text-uppercase letter-spacing-1" style={{ letterSpacing: '0.2em' }}>{title}</span>
+                    <span className="fw-bold fs-6 fs-md-5 text-uppercase" style={{ letterSpacing: '0.1em' }}>{title}</span>
                 </div>
             </Col>
             <Col><hr className="border-2 border-secondary opacity-100" /></Col>
@@ -46,8 +46,8 @@ export default function Rules() {
     const [openCard, setOpenCard] = useState(null);
 
     return (
-        <Container className="py-5 mt-2 mb-5" style={{ maxWidth: '900px' }}>
-            <h1 className="display-5 fw-bold text-center mb-5" style={{ letterSpacing: '0.07em' }}>Правила игры</h1>
+        <Container className="py-5 mt-2 px-3 px-md-4" style={{ maxWidth: '900px' }}>
+            <h1 className="display-4 fw-bold text-center mb-5" style={{ letterSpacing: '0.07em' }}>Правила игры</h1>
 
             <SectionTitle title="Подготовка к игре"/>
 
@@ -61,7 +61,7 @@ export default function Rules() {
                     <Accordion.Header>Вариант А — Раздача на руки (простой)</Accordion.Header>
                     <Accordion.Body>
                         <p>Раздайте фишки поровну всем игрокам:</p>
-                        <Table bordered size="sm" className="text-center">
+                        <Table bordered resp size="sm" className="text-center">
                             <thead className="table-dark">
                                 <tr><th>Игроков</th><th>Фишек на игрока</th><th>Остаток</th></tr>
                             </thead>
