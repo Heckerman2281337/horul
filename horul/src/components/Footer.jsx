@@ -6,6 +6,7 @@ export default function Footer() {
     return (
         <footer className="bg-dark text-white-50 py-4 mt-auto">
             <Container className="text-center">
+                {/* Пока оставить так
                 <div className="d-flex justify-content-center gap-4 mb-2">
                     <a href="mailto:your@email.com" className="text-white-50 text-decoration-none">
                         <FaEnvelope className="me-1" /> your@email.com
@@ -18,6 +19,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <small>© {currentYear} Все права защищены. Юрисдикционный текст здесь.</small>
+                    */}
             </Container>
         </footer>
     );
