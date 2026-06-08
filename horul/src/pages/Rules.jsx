@@ -1,5 +1,6 @@
 import { Container, Table, Badge, Card, Accordion, Col, Row } from 'react-bootstrap';
 import { FaCheck, FaTimes } from 'react-icons/fa';
+import { useState } from 'react';
 
 function SectionTitle({ title })
 {
@@ -17,6 +18,33 @@ function SectionTitle({ title })
 }
 
 export default function Rules() {
+    const animals = [
+        { place: 1, emoji: '🐀', name: 'Мышь', img: 'animals/mouse.png' },
+        { place: 2, emoji: '🐂', name: 'Корова', img: 'animals/cow.png' },
+        { place: 3, emoji: '🐅', name: 'Тигр', img: 'animals/tiger.png' },
+        { place: 4, emoji: '🐇', name: 'Заяц', img: 'animals/rabbit.png' },
+        { place: 5, emoji: '🐉', name: 'Дракон', img: 'animals/dragon.png' },
+        { place: 6, emoji: '🐍', name: 'Змея', img: 'animals/snake.png' },
+        { place: 7, emoji: '🐴', name: 'Лошадь', img: 'animals/horse.png' },
+        { place: 8, emoji: '🐏', name: 'Овца', img: 'animals/sheep.png' },
+        { place: 9, emoji: '🐒', name: 'Обезьяна', img: 'animals/monkey.png' },
+        { place: 10, emoji: '🐓', name: 'Петух', img: 'animals/peacock.png' },
+        { place: 11, emoji: '🐕', name: 'Собака', img: 'animals/dog.png' },
+        { place: 12, emoji: '🐖', name: 'Свинья', img: 'animals/pig.png' },
+    ];
+
+    const cards = [
+        { place: 1, name: 'Хурту', translation: 'Флюгер / Знамя Победы', img: 'cards/hurtu.png' },
+        { place: 2, name: 'Шындавал', translation: 'Тамга / Клеймо', img: 'cards/shindival.png' },
+        { place: 3, name: 'Балык', translation: 'Рыба', img: 'cards/balyk.png' },
+        { place: 4, name: 'Тун', translation: 'Морская раковина', img: 'cards/tun.png' },
+        { place: 5, name: 'Олчей удазыны', translation: 'Узел счастья', img: 'cards/olcheyUdazini.png' },
+        { place: 6, name: 'Хаан-Херети', translation: 'Птица счастья / Гаруда', img: 'cards/haanHereti.png' },
+    ]
+
+    const [openAnimal, setOpenAnimal] = useState(null);
+    const [openCard, setOpenCard] = useState(null);
+
     return (
         <Container className="py-5 mt-2 mb-5" style={{ maxWidth: '900px' }}>
             <h1 className="display-5 fw-bold text-center mb-5" style={{ letterSpacing: '0.07em' }}>Правила игры</h1>
@@ -81,30 +109,64 @@ export default function Rules() {
 
             <SectionTitle title="Иерархия животных" />
             <p>Порядок соответствует легенде о Великой гонке к Нефритовому императору (от сильного к слабому):</p>
-            <div className="d-flex flex-wrap gap-2 mb-4">
-                {['🐀 Мышь', '🐂 Корова', '🐅 Тигр', '🐇 Заяц', '🐉 Дракон', '🐍 Змея',
-                    '🐴 Лошадь', '🐏 Овца', '🐒 Обезьяна', '🐓 Петух', '🐕 Собака', '🐖 Свинья'].map((a, i) => (
-                        <Badge key={i} bg={i === 0 ? 'success' : i === 11 ? 'danger' : 'secondary'} className="fs-6 px-2 py-1">
-                            {i + 1}. {a}
-                        </Badge>
-                    ))}
-            </div>
+            <Row className="justify-content-center">
+                <Col style={{ maxWidth: '500px' }}>
+                    <Table bordered hover responsive className="text-center">
+                        <thead className="table-dark">
+                            <tr><th>Место</th><th>Животное</th></tr>
+                        </thead>
+                        <tbody>
+                            {animals.map(a => (
+                            <>
+                                <tr key={a.place} style={{ cursor: 'pointer' }}
+                                onClick={() => setOpenAnimal(openAnimal === a.place ? null : a.place)}>
+                                    <td>{a.place}</td>
+                                    <td>{a.emoji} {a.name}</td>
+                                </tr>
+                                {openAnimal === a.place && (
+                                <tr key={`card-${a.place}`}>
+                                    <td colSpan={2} className="text-center py-3" style={{background: "black"}}>
+                                        <img src={a.img} style={{ width: 120, height: 120, objectFit: 'contain' }}/>
+                                    </td>
+                                </tr>
+                            )}
+                            </>
+                            ))}
+                        </tbody>
+                    </Table>
+                </Col>
+            </Row>
 
             <SectionTitle title="Сильные символы (козыри)" />
             <p className="text-muted">Любой сильный символ сильнее любого животного.</p>
-            <Table bordered hover responsive className="text-center">
-                <thead className="table-dark">
-                    <tr><th>Место</th><th>Символ (тув.)</th><th>Перевод</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Хурту</td><td>Флюгер / Знамя Победы</td></tr>
-                    <tr><td>2</td><td>Шындавал</td><td>Тамга / Клеймо</td></tr>
-                    <tr><td>3</td><td>Балык</td><td>Рыба</td></tr>
-                    <tr><td>4</td><td>Тун</td><td>Морская раковина</td></tr>
-                    <tr><td>5</td><td>Олчей удазыны</td><td>Узел счастья</td></tr>
-                    <tr><td>6</td><td>Хаан-Херети</td><td>Птица счастья / Гаруда</td></tr>
-                </tbody>
-            </Table>
+            <Row>
+                <Col>
+                    <Table bordered hover responsive className="text-center">
+                        <thead className="table-dark">
+                            <tr><th>Место</th><th>Символ (тув.)</th><th>Перевод</th></tr>
+                        </thead>
+                        <tbody>
+                            {cards.map(c => (
+                            <>
+                                <tr key={c.place} style={{ cursor: 'pointer' }}
+                                onClick={() => setOpenCard(openCard === c.place ? null : c.place)}>
+                                    <td>{c.place}</td>
+                                    <td>{c.name} </td>
+                                    <td>{c.translation}</td>
+                                </tr>
+                                {openCard === c.place && (
+                                <tr key={`card-${c.place}`}>
+                                    <td colSpan={3} className="text-center py-3" style={{ background: "black" }}>
+                                        <img src={c.img} style={{ width: 120, height: 240, objectFit: 'contain' }} />
+                                    </td>
+                                </tr>
+                            )}
+                            </>
+                            ))}
+                        </tbody>
+                    </Table>
+                </Col>
+            </Row>
 
             <SectionTitle title="Процесс игры" />
             <p>Игроки ходят <strong>по часовой стрелке</strong>.</p>
