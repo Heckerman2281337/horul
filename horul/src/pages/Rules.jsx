@@ -5,17 +5,29 @@ import { useState } from 'react';
 function SectionTitle({ title })
 {
     return (
-        <div className="d-flex align-items-center gap-3 my-5 px-3">
-            <hr className="flex-grow-1 border-2 border-secondary opacity-100 m-0" />
-            <div className="d-flex align-items-center gap-2 px-4 py-1 rounded-pill bg-dark text-white shadow flex-shrink-0">
+        <div className="d-flex align-items-center justify-content-center gap-2 gap-sm-3 my-4 my-sm-5 px-1">
+            <hr
+                className="flex-grow-1 border-2 border-secondary opacity-100 m-0"
+                style={{ minWidth: '15px' }}
+            />
+
+            <div className="d-flex align-items-center px-3 py-1 px-sm-4 rounded-pill bg-dark text-white shadow-sm flex-shrink-1 text-center">
                 <span
                     className="fw-bold text-uppercase"
-                    style={{ letterSpacing: '0.05em', fontSize: 'clamp(0.6rem, 3vw, 0.875rem)' }}
+                    style={{
+                        letterSpacing: '0.05em',
+                        fontSize: 'clamp(0.7rem, 3.5vw, 0.875rem)', // Слегка уменьшил нижний порог до 0.7rem для экстремально узких экранов
+                        whiteSpace: 'normal'
+                    }}
                 >
                     {title}
                 </span>
             </div>
-            <hr className="flex-grow-1 border-2 border-secondary opacity-100 m-0" />
+
+            <hr
+                className="flex-grow-1 border-2 border-secondary opacity-100 m-0"
+                style={{ minWidth: '15px' }}
+            />
         </div>
     );
 }
@@ -64,7 +76,7 @@ export default function Rules() {
                     <Accordion.Header>Вариант А — Раздача на руки (простой)</Accordion.Header>
                     <Accordion.Body>
                         <p>Раздайте фишки поровну всем игрокам:</p>
-                        <Table bordered resp size="sm" className="text-center">
+                        <Table bordered responsive size="sm" className="text-center">
                             <thead className="table-dark">
                                 <tr><th>Игроков</th><th>Фишек на игрока</th><th>Остаток</th></tr>
                             </thead>
@@ -140,6 +152,76 @@ export default function Rules() {
                 </Col>
             </Row>
             <p className="text-muted text-center fst-italic">Прим. нажмите на строку для просмотра карты</p>
+            <Accordion flush>
+                <Accordion.Item eventKey="0" style={{ backgroundColor: 'transparent' }}>
+                    <Accordion.Header>
+                        <div className="w-100 d-flex justify-content-center">
+                            <span
+                                className="fw-bold fs-6 text-uppercase px-4 py-2 rounded-pill shadow-sm"
+                                style={{
+                                    letterSpacing: '0.15em',
+                                    color: '#8b1c1c', 
+                                    backgroundColor: 'rgba(230, 194, 122, 0.1)'
+                                }}
+                            >
+                                Почему так?
+                            </span>
+                        </div>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                        <Card className="bg-dark text-white border-secondary">
+                            <Card.Body  style={{ whiteSpace: 'pre-line', lineHeight: '1.8' }}>
+                                <p className="text-center mb-4 fst-italic text-light" style={{ opacity: 0.85 }}>
+                                    Нефритовый Император решил выбрать 12 животных, чтобы они стали
+                                    символами времени. Он объявил гонку через реку: кто прибудет первым,
+                                    тот и возглавит зодиак.
+                                </p>
+
+                                <div className="d-flex flex-column gap-3">
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐀🐂 Маленькая умная <strong>Крыса</strong> заметила сильную и выносливую <strong>Корову</strong>, которая готовилась войти в воду, и обратилась к ней:<br />
+                                        <span className="fst-italic text-white-50 mt-2 d-inline-block">
+                                            — О мудрая Корова, позволь мне пересечь реку на тебе. Я слишком мала, чтобы сделать это сама.
+                                        </span><br />
+                                        <span className="mt-2 d-inline-block">
+                                            Добрая Корова посадила Крысу себе на спину. Когда до берега осталось всего несколько шагов, Крыса ловко прыгнула и вступила на берег <strong>первой</strong>. Корова, не обидевшись на хитрость, заняла почетное <strong>второе место</strong>.
+                                        </span>
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐅 <strong>Третьим</strong> финишировал <strong>Тигр</strong>. Его сила и упорство помогли преодолеть бурный поток.
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐇 <strong>Четвертым</strong> прибыл <strong>Заяц</strong>, который благодаря своей ловкости прыгал по камням и плывущим бревнам, легко адаптируясь к любым трудностям.
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐉 Вскоре небо озарилось сиянием, и к Вратам подлетел <strong>Дракон</strong>. Могучий и благородный, он мог бы стать первым, но задержался, чтобы вызвать дождь над полями и помочь людям. Он занял <strong>пятое место</strong>.
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐍🐎 Позади бежала <strong>Лошадь</strong>. Ее мощные ноги уверенно несли ее вперед, когда вдруг из-под копыта выскользнула хитрая <strong>Змея</strong>. Она все это время пряталась, чтобы в последний момент проскользнуть вперед. Так Змея заняла <strong>шестое место</strong>, оставив Лошади <strong>седьмое</strong>.
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐏🐒🐓 Следом прибыли <strong>Овца, Обезьяна и Петух</strong>, которые сообща перебрались через бурную реку. Петух нашел плот, Овца расчистила путь, а Обезьяна ловко управляла.
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐕 <strong>Собака</strong>, прекрасная пловчиха, могла финишировать раньше, но отвлеклась, играя с волнами. Поэтому она вступила на берег <strong>одиннадцатой</strong>.
+                                    </div>
+
+                                    <div className="p-3 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
+                                        🐖 <strong>Последней</strong>, неспешно, перебралась <strong>Свинья</strong>. Она задержалась, решив перекусить и немного вздремнуть, но упорство помогло ей пройти гонку, став <strong>двенадцатой</strong>.
+                                    </div>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
+
             <SectionTitle title="Сильные символы (козыри)" />
             <p className="text-muted">Любой сильный символ сильнее любого животного.</p>
             <Row>
@@ -263,27 +345,36 @@ export default function Rules() {
             </ol>
 
             <SectionTitle title="Шпаргалка"></SectionTitle>
-               <Card className="bg-dark text-white border-secondary">
-                   <Card.Body style={{ whiteSpace: 'pre-line', lineHeight: '1.8' }}>
-                    <strong>ПОДГОТОВКА:</strong>{'\n'}
-                    Перемешайте 72 фишки.{'\n'}
-                    Распределите поровну (или стопками по 6–8 фишек).{'\n\n'}
+            <Card className="bg-dark text-white border-secondary mb-2">
+                <Card.Body className="p-3 p-sm-4" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
+                    <div className="mb-3">
+                        <h6 className="text-warning fw-bold text-uppercase mb-2">1. Подготовка</h6>
+                        <div>• Перемешать 72 фишки.</div>
+                        <div>• Раздать поровну или стопками по 6–8 шт.</div>
+                    </div>
 
-                    <strong>ИЕРАРХИЯ:</strong>{'\n'}
-                    Козыри: Хурту {'>'} Шындавал {'>'} Балык {'>'} Тун {'>'} Олчей удазыны {'>'} Хаан-Херети{'\n'}
-                    Животные: Мышь {'>'} Корова {'>'} Тигр {'>'} Заяц {'>'} Дракон {'>'} Змея {'>'} Лошадь {'>'} Овца {'>'} Обезьяна {'>'} Петух {'>'} Собака {'>'} Свинья{'\n'}
-                    Любой козырь превосходит любое животное.{'\n\n'}
+                    <div className="mb-3">
+                        <h6 className="text-warning fw-bold text-uppercase mb-2">2. Иерархия рангов</h6>
+                        <div className="mb-1">
+                            <span className="text-info fw-bold">Козыри:</span> Хурту &gt; Шындавал &gt; Балык &gt; Тун &gt; Олчей удазыны &gt; Хаан-Херети
+                        </div>
+                        <div>
+                            <span className="text-success fw-bold">Животные:</span> Мышь &gt; Корова &gt; Тигр &gt; Заяц &gt; Дракон &gt; Змея &gt; Лошадь &gt; Овца &gt; Обезьяна &gt; Петух &gt; Собака &gt; Свинья
+                        </div>
+                        <div className="text-muted fst-italic mt-1">* Любой козырь бьет любое животное.</div>
+                    </div>
 
-                    <strong>ХОД ИГРЫ:</strong>{'\n'}
-                    ЗАХОД: Выложите 1–4 одинаковые фишки.{'\n'}
-                    ПОКРЫТИЕ: Выложите столько же фишек{'\n'}
-                    {'   '}• Для победы во взятке — фишками более высокого ранга.{'\n'}
-                    {'   '}• При отсутствии подходящих — любыми фишками.{'\n'}
-                    ВЗЯТКА: достаётся игроку с наиболее сильной фишкой.{'\n'}
-                    НОВЫЙ ХОД: начинает победитель взятки.{'\n\n'}
-                    <strong>ЦЕЛЬ: набрать наибольшее количество взяток</strong>
-                   </Card.Body>
-               </Card>
+                    <div>
+                        <h6 className="text-warning fw-bold text-uppercase mb-2">3. Игровой цикл</h6>
+                        <div>• <strong>Заход:</strong> От 1 до 4 карт строго одного ранга.</div>
+                        <div>• <strong>Покрытие:</strong> Столько же карт (высшим рангом для победы, либо любыми на сброс).</div>
+                        <div>• <strong>Взятка:</strong> Уходит владельцу самой сильной фишки на столе.</div>
+                        <div className="mt-2 fw-bold text-center border-top border-secondary pt-2 text-uppercase text-light">
+                            Цель: Взять как можно больше взяток
+                        </div>
+                    </div>
+                </Card.Body>
+            </Card>
         </Container>
     );
 }
