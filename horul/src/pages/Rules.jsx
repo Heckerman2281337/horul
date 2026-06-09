@@ -5,15 +5,18 @@ import { useState } from 'react';
 function SectionTitle({ title })
 {
     return (
-        <Row className="align-items-center my-5">
-            <Col><hr className="border-2 border-secondary opacity-100" /></Col>
-            <Col xs="auto">
-                <div className="d-flex align-items-center gap-2 px-4 py-1 rounded-pill bg-dark text-white shadow">
-                    <span className="fw-bold fs-6 fs-md-5 text-uppercase" style={{ letterSpacing: '0.1em' }}>{title}</span>
-                </div>
-            </Col>
-            <Col><hr className="border-2 border-secondary opacity-100" /></Col>
-        </Row>
+        <div className="d-flex align-items-center gap-3 my-5 px-3">
+            <hr className="flex-grow-1 border-2 border-secondary opacity-100 m-0" />
+            <div className="d-flex align-items-center gap-2 px-4 py-1 rounded-pill bg-dark text-white shadow flex-shrink-0">
+                <span
+                    className="fw-bold text-uppercase"
+                    style={{ letterSpacing: '0.05em', fontSize: 'clamp(0.6rem, 3vw, 0.875rem)' }}
+                >
+                    {title}
+                </span>
+            </div>
+            <hr className="flex-grow-1 border-2 border-secondary opacity-100 m-0" />
+        </div>
     );
 }
 
@@ -125,8 +128,8 @@ export default function Rules() {
                                 </tr>
                                 {openAnimal === a.place && (
                                 <tr key={`card-${a.place}`}>
-                                    <td colSpan={2} className="text-center py-3" style={{background: "black"}}>
-                                        <img src={a.img} style={{ width: 120, height: 120, objectFit: 'contain' }}/>
+                                    <td colSpan={2} className="text-center py-3">
+                                        <img src={a.img} style={{ width: 160, height: 160, objectFit: 'contain' }}/>
                                     </td>
                                 </tr>
                             )}
@@ -136,7 +139,7 @@ export default function Rules() {
                     </Table>
                 </Col>
             </Row>
-
+            <p className="text-muted text-center fst-italic">Прим. нажмите на строку для просмотра карты</p>
             <SectionTitle title="Сильные символы (козыри)" />
             <p className="text-muted">Любой сильный символ сильнее любого животного.</p>
             <Row>
@@ -156,8 +159,8 @@ export default function Rules() {
                                 </tr>
                                 {openCard === c.place && (
                                 <tr key={`card-${c.place}`}>
-                                    <td colSpan={3} className="text-center py-3" style={{ background: "black" }}>
-                                        <img src={c.img} style={{ width: 120, height: 240, objectFit: 'contain' }} />
+                                    <td colSpan={3} className="text-center py-3">
+                                        <img src={c.img} style={{ width: 160, height: 160, objectFit: 'contain' }} />
                                     </td>
                                 </tr>
                             )}
@@ -167,7 +170,7 @@ export default function Rules() {
                     </Table>
                 </Col>
             </Row>
-
+            <p className="text-muted text-center fst-italic">Прим. нажмите на строку для просмотра карты</p>
             <SectionTitle title="Процесс игры" />
             <p>Игроки ходят <strong>по часовой стрелке</strong>.</p>
 
@@ -177,7 +180,16 @@ export default function Rules() {
                     <p>Игрок выкладывает в центр стола <strong>от 1 до 4 фишек одинакового достоинства</strong>.</p>
                     <Table bordered size="sm">
                         <thead className="table-dark">
-                            <tr><th><FaCheck />Можно</th><th><FaTimes/>Нельзя</th></tr>
+                            <tr>
+                                <th>
+                                <FaCheck style={{ verticalAlign: 'middle', marginRight: 4, position: 'relative', top: -1 }} />
+                                    Можно
+                                </th>
+                                <th>
+                                <FaTimes style={{ verticalAlign: 'middle', marginRight: 4, position: 'relative', top: -1 }} />
+                                    Нельзя
+                                </th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -250,41 +262,28 @@ export default function Rules() {
                 <li>При равном количестве взяток объявляется ничья.</li>
             </ol>
 
-            <Accordion flush>
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                        <div className="w-100 d-flex justify-content-center">
-                            <span
-                            className="fw-bold fs-5 text-uppercase px-4 py-1 rounded-pill text-white shadow"
-                            style={{ letterSpacing: '0.2em', background: 'linear-gradient(180deg, #964B00, #000000)', }}
-                            >
-                            Шпаргалка
-                            </span>
-                        </div>
-                    </Accordion.Header>
-                        <Accordion.Body>
-                            <Card className="bg-dark text-white border-secondary">
-                                <Card.Body className="font-monospace" style={{ whiteSpace: 'pre-line', lineHeight: '1.8' }}>
-                                    <strong>ПОДГОТОВКА:</strong>{'\n'}
-                                    • Перемешайте 72 фишки.{'\n'}
-                                    • Раздайте поровну (или стопками по 6–8 фишек).{'\n\n'}
-                                    <strong>ИЕРАРХИЯ:</strong>{'\n'}
-                                    • Козыри: Хурту {'>'} Шындавал {'>'} Балык {'>'} Тун {'>'} Олчей удазыны {'>'} Хаан-Херети{'\n'}
-                                    • Животные: Мышь {'>'} Корова {'>'} Тигр {'>'} Заяц {'>'} Дракон {'>'} Змея {'>'} Лошадь {'>'} Овца {'>'} Обезьяна {'>'} Петух {'>'} Собака {'>'} Свинья{'\n'}
-                                    • Любой козырь сильнее любого животного.{'\n\n'}
-                                    <strong>ХОД ИГРЫ:</strong>{'\n'}
-                                    1. ЗАХОД: выложи 1–4 одинаковые фишки.{'\n'}
-                                    2. ПОКРОЙ: выложи СТОЛЬКО ЖЕ фишек (обязательно!){'\n'}
-                                    {'   '}• Хочешь выиграть? Бей более сильными!{'\n'}
-                                    {'   '}• Нет сильных? Покрой любыми!{'\n'}
-                                    3. ВЗЯТКА: забирает тот, у кого самая сильная фишка.{'\n'}
-                                    4. НОВЫЙ ХОД: начинает победитель взятки.{'\n\n'}
-                                    <strong className="text-success">ЦЕЛЬ: набрать больше всех взяток</strong>
-                                </Card.Body>
-                            </Card>
-                        </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
+            <SectionTitle title="Шпаргалка"></SectionTitle>
+               <Card className="bg-dark text-white border-secondary">
+                   <Card.Body style={{ whiteSpace: 'pre-line', lineHeight: '1.8' }}>
+                    <strong>ПОДГОТОВКА:</strong>{'\n'}
+                    Перемешайте 72 фишки.{'\n'}
+                    Распределите поровну (или стопками по 6–8 фишек).{'\n\n'}
+
+                    <strong>ИЕРАРХИЯ:</strong>{'\n'}
+                    Козыри: Хурту {'>'} Шындавал {'>'} Балык {'>'} Тун {'>'} Олчей удазыны {'>'} Хаан-Херети{'\n'}
+                    Животные: Мышь {'>'} Корова {'>'} Тигр {'>'} Заяц {'>'} Дракон {'>'} Змея {'>'} Лошадь {'>'} Овца {'>'} Обезьяна {'>'} Петух {'>'} Собака {'>'} Свинья{'\n'}
+                    Любой козырь превосходит любое животное.{'\n\n'}
+
+                    <strong>ХОД ИГРЫ:</strong>{'\n'}
+                    ЗАХОД: Выложите 1–4 одинаковые фишки.{'\n'}
+                    ПОКРЫТИЕ: Выложите столько же фишек{'\n'}
+                    {'   '}• Для победы во взятке — фишками более высокого ранга.{'\n'}
+                    {'   '}• При отсутствии подходящих — любыми фишками.{'\n'}
+                    ВЗЯТКА: достаётся игроку с наиболее сильной фишкой.{'\n'}
+                    НОВЫЙ ХОД: начинает победитель взятки.{'\n\n'}
+                    <strong>ЦЕЛЬ: набрать наибольшее количество взяток</strong>
+                   </Card.Body>
+               </Card>
         </Container>
     );
 }
