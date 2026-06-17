@@ -3,11 +3,13 @@
 This is one-paged website that shows tuvan folk game "Horul". There are rules and story of it.
 
 ## Stack
-React, Boostrap5, Vite
+- React
+- React-Boostrap
+- Vite
 
 ## How to install and run
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 ## What does it do?
 Litteraly nothing. Its just info page. But there will be updated for it
