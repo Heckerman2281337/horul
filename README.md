@@ -10,7 +10,7 @@ This is one-paged website that shows tuvan folk game "Horul". There are rules an
 ## How to install and run
 - npm install
 - npm run dev
-#### Also you can just click [this link](iwilladdlinklater.com) to check it
+#### Also you can just click [this link](https://horul.netlify.app/) to check it
 
 ## What does it do?
 Litteraly nothing. Its just info page. But there will be updates for it
